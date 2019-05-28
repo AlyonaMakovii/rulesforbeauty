@@ -1,0 +1,152 @@
+html, body { 
+ margin: 0; 
+ height:100%;
+ }
+ 
+body {
+ background: url(../photo/sp.png);
+}
+
+
+h1{
+   color: white;
+   font-weight: bold;
+   font-family: 'Gabriola', sans-serif;
+   font-size:40px;
+   margin:0;
+}
+
+h2{
+   color: #8B0000;
+   padding: 10px;
+   font-weight: bold;
+   font-family: Segoe Print;
+   font-size:32px;
+   text-align: center;
+}
+
+p{
+   color:#000;
+   font-family:"Georgia";
+   text-align: justify;
+   font-size:16px;
+}
+
+a {
+   color: midnightblue;
+   text-decoration: none;
+   font-size:16px;
+} 
+
+a:hover{
+   color: teal;
+}
+   
+img{ 
+   margin: 5px 20px 10px 0;
+   float:left; 
+}
+
+iframe{ 
+   margin:20px 0;
+}
+
+#photo1 {
+   margin-left:80px;
+   
+}
+ 
+#wrap {
+	background: #fff;
+	width:960px;  
+	margin:0 auto;  
+	min-height: 130%; 
+ }
+ 
+#header{ 
+	width:100%; /*Çàãîëîâîê ïî øèðèíå çàíèìàåò âåñü öåíòðàëüíûé áëîê*/
+	text-align:center; /* Öåíòðèðóåì òåêñò*/
+	color:#fff;
+	font-size:24px; 
+	height: 150px; /*Âûñîòà çàãîëîâêà*/
+	background: #000000;
+	display: table;/*Ïðåäñòàâëÿåì êàê òàáëèöó äëÿ âåðòèêàëüíîãî âûðàâíèâàíèÿ*/
+	vertical-align: middle;
+ }
+
+#header h1{
+	display: inline-block; /* öåíòðèðîâàòü..*/
+    vertical-align: middle;  /* ..ïî âåðòèêàëè */
+	display: table-cell; /*Ïðåäñòàâëÿåì êàê ÿ÷åéêó òàáëèöû äëÿ âåðòèêàëüíîãî âûðàâíèâàíèÿ*/
+}
+
+#menu{ 
+   background: #fff;
+   float:left; 
+   text-align:center; 
+   font-size:18px; 
+   width: 200px;
+   padding: 50px 10px 10px 10px; /*îòñòóïû*/
+}
+
+.list_menu{ 
+   list-style:none; 
+   font-family: Chance Cyrillic;
+}
+   
+.list_menu li{ 
+   margin:18px;
+   font-family: Chance Cyrillic;
+}
+
+.list_menu li a{ /*Ñòèëü äëÿ ññûëêè, íàõîäÿùåéñÿ âíóòðè êàæäîãî ïóíêòà ìåíþ*/
+   padding:10px;
+   display:block;
+   color: white;
+   width: 10vw;
+   background: #000000;
+}
+
+.list_menu li a:hover{ /*Ñòèëü äëÿ ññûëêè, íàõîäÿùåéñÿ âíóòðè êàæäîãî ïóíêòà ìåíþ ïðè íàâåäåíèè ìûøêè*/
+   color: #fff;
+   background:#8B0000;
+}
+
+#content{
+   min-height: 100vw; /*ìèíèìàëüíàÿ âûñîòà êîíòåíòà*/
+   background: #fff;
+   margin-left:200px; /*îòñòóï ðàâåí øèðèíå ìåíþ*/
+   padding:0px 50px;/*íèæíèé îòñòóï ðàâåí âûñîòå ôóòåðà - äëÿ ïðèæàòîãî ê íèçó îêíà ôóòåðà */
+} 
+
+#content span{
+   color: #8B0000;
+}
+
+#footer{ /*Ñòèëü äëÿ ïîäâàëà*/
+   clear:both;
+   width:960px; 
+   vertical-align: bottom; 
+   height: 60px;
+   background: #000000;
+   margin:0 auto;
+   height: 80px;/*âûñîòà ôóòåðà*/
+   margin-top:-80px;/*ïîäíèìàåì ôóòåð íà åãî æå âûñîòó - äëÿ ïðèæàòîãî ê íèçó îêíà ôóòåðà */
+}
+
+#footer p{ /*Ñòèëü äëÿ òåêñòà âíóòðè ïîäâàëà*/
+   font-family: Chance Cyrillic;
+   font-weight:bold;
+   color: #fff;
+   text-align:center;
+   line-height: 80px; /*Ñòèëü äëÿ âåðòèêàëüíîãî âûðàâíèâàíèÿ - âûñîòà ñòðîêè ðàâíà âûñîòå ôóòåðà*/
+   margin:0px;
+}
+
+.up{ /*Ñòèëü äëÿ ñòðåëêè-ññûëêè ââåðõ*/
+   color :#fff;
+   position:fixed; 
+   bottom:20px; 
+   left: 40px;
+   font-size:40px;
+}

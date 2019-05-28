@@ -1,0 +1,299 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.slider-box {
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
+
+.slider {
+	position: relative;
+	width: 10000px;
+	height: 100%;
+}
+
+.slider img {
+	float: left;
+	width: 100vw;
+	z-index: 0;
+}
+
+
+.menu {
+	width: 100%;
+	font-family: 'Gabriola', sans-serif;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 1);
+	display: table;
+	z-index: 100;
+}
+
+h1, h2, h3 {
+	font-family: "Gabriola";
+}
+h1 {
+	font-size: 50px;
+	position: center;
+
+}
+h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: #000000;
+}
+h3 {
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+	position: relative;
+    color: #000000;
+} 
+
+.menu .title-box {
+	padding-left: 100px;
+	font-size: 40pt;
+	font-weight: bold;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu ul {
+	display: table-cell;
+	vertical-align: middle;
+	transition: linear 0.5s;
+}
+
+.menu ul li {
+	padding: 40px 30px;
+	display: table-cell;
+}
+
+.menu ul li:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.menu ul a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 36px;
+}
+
+.content {
+	position: absolute;
+	top: 800px;
+	left: 0px;
+	width: 100%;
+}
+
+
+.conteiner {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	font-family: 'Arimo', sans-serif;
+}
+
+.conteiner h1 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.conteiner p {
+	margin: 10px 0px;
+}
+
+
+.icons {
+	width: 100%;
+	display: table;
+}
+
+.icons div {
+	width: 33%;
+	height: 200px;
+	display: table-cell;
+}
+
+.icons div:first-child {
+	background: url(../photo/insta.png) center center no-repeat;
+	background-size: auto 170px;
+}
+
+.icons div:nth-child(2) {
+	background: url(../photo/youtube.png) center no-repeat;
+	background-size: auto 200px;
+}
+
+.icons div:last-child {
+	background: url(../photo/face.png) center no-repeat;
+	background-size: auto 200px;
+}
+
+
+
+.wrap {
+	background: #fff;
+	width:960px; 
+	margin:0 auto; 
+	min-height: 130%;
+	margin-left: 10px;
+ }
+
+/* list-menu*/
+
+.list_menu{ 
+   list-style:none; 
+   font-family: 'Gabriola';
+   color: white;
+}
+   
+.list_menu li{ 
+   margin:18px;
+   font-size: 30px;
+}
+
+.list_menu li a{ 
+   padding:10px;
+   display:block;
+   color: white;
+   background: #000000;
+}
+
+.list_menu li a: hover{ 
+   color: #fff;
+   background: darkslategray;
+}
+
+
+
+.tool-selection {
+	margin-top: 50px;
+	padding-top: 70px;
+	margin-right: 50px;
+	position: relative;
+	z-index: 10;
+}
+.tool-selection .tool-block {
+	position: relative;
+	z-index: 10;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 30px 45px 50px 45px;
+	margin-top: 15px;	
+	width: 351px;
+	height: 330px;
+}
+.tool-selection .tool-block .preview {
+	position: relative;
+	z-index: 5;
+}
+.tool-selection .tool-block .preview .tool-image, .tool-selection .tool-block .preview .tool-label {
+	text-align: center;
+}
+
+.tool-selection .tool-block .preview .tool-label p {
+	margin-top: 20px;
+	font-family: 'Gabriola', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+}
+.tool-selection .tool-block .hov-info {
+	padding: 88px 70px 50px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+.tool-selection .tool-block .hov-info .tool-label p{
+	color: #fff;
+	font-family: 'Gabriola', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+}
+.tool-selection .tool-block .hov-info .tool-label {
+	position: relative;
+}
+.tool-selection .tool-block .hov-info .tool-label::after {
+	content: '';
+	width: 50px;
+	height: 4px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -30px;
+	left: calc(50% - 25px);
+}
+
+.tool-selection .tool-block:hover .hov-info {
+	display: block;
+	background-color: #000000; 
+	opacity: 0.95;
+}
+
+
+
+
+.icon-free {
+	position: absolute;
+	width: 40px;
+	right: 12px;
+	bottom: 20px;
+	cursor: pointer;
+	z-index: 9999;
+	width: 100%;
+	display: table;
+}
+
+.icon-free a {
+	text-align: center;
+	border: 1px solid transparentf;
+	margin-top: 10px;
+	font-size: 18px;
+	color: transparent;
+	cursor: pointer;
+	transition: 0.3s;
+	outline: none;
+	outline-offset: 0;
+	width: 33%;
+	height: 200px;
+	display: table-cell;
+}
+.icon-free a:hover {
+	background-color: transparent;
+}
+
+
+
+.footer {
+
+   width:100%; 
+   background: #000000;
+   height: 50px;
+   
+}
+
+.footer .conteiner {
+	color: white;
+	font-size: 26px;
+	font-family: 'Gabriola', sans-serif;
+}
+
+
